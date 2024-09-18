@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 650px) {
+    * {
+        font-size: 95%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    * {
+        font-size: 92%;
+    }
+}
+
+
+
+header {
+    height: 60px;
+    background: linear-gradient(-45deg, grey, white);
+    border-bottom: .3px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+
+    >div {
+        & img#logo {
+            width: 30px;
+            height: 30px;
+
+        }
+
+        & span {
+            color: #043b66;
+            font-size: x-large;
+            font-weight: 600;
+
+            @media screen and (max-width: 450px) {
+                font-size: medium;
+            }
+        }
+    }
+}
+
+img#logo {
+    width: 30px;
+    aspect-ratio: 1 / 1;
+}
+
+main {
+    min-height: calc(100vh - 60px);
+    background-color: #888888;
+    padding-top: 1rem;
+}
+
+form input,
+small {
+    width: 100%;
+}
+
+/* index page stylings */
+
+body#index_body {
+    background-color: rgb(224, 224, 224);
+}
+
+div#month_image {
+    >img {
+        width: 100%;
+    }
+}
+
+span#span-position {
+    position: absolute;
+    left: 50px;
+    top: 140px;
+    padding: .2rem;
+    background-color: rgba(255, 255, 255, 0.793);
+    box-shadow: .5px 1px rgb(48, 48, 48);
+    filter: drop-shadow(0 0 2px white);
+    border-radius: 6px;
+    color: red;
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    @media screen and (max-width: 750px) {
+        left: 20px;
+        top: 135px;
+        font-size: .6rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        left: 20px;
+        top: 120px;
+    }
+
+    @media screen and (max-width: 350px) {
+        font-size: .5rem;
+    }
+
+    & i {
+        padding-top: 1rem;
+        font-size: 1.5rem;
+
+    }
+}
+
+div#shifts_table {
+    border: solid .25px rgb(197, 197, 197);
+    border-radius: 2px;
+    max-height: 500px;
+    overflow-y: scroll;
+
+    & td {
+        font-size: large;
+
+        @media screen and (max-width: 800px) {
+            font-size: medium;
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: small;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: x-small;
+        }
+    }
+}
+
+.td-box {
+    box-shadow: .5px 1px rgb(96, 96, 96);
+    filter: drop-shadow(0 0 3px black);
+    border-radius: 2px;
+}
+
+.td-day {
+    background-color: #53852C !important;
+}
+
+.td-night {
+    background-color: #E57D36 !important;
+}
+
+
+
+
+/* about page stylings */
+
+body#about_body {
+    background-color: rgb(224, 224, 224);
+}
+
+/* imported footer style, shared within all pages */
+
+footer {
+    min-height: 150px;
+    position: relative;
+    padding-top: 20px;
+    bottom: 0;
+    border-top: 2px solid #225378;
+
+    & a {
+        text-decoration: none;
+    }
+}
+
+.mainrow {
+    padding-bottom: 10px;
+}
+
+.sitnavH1,
+.contactus,
+.socialM {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #225378;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0px;
+}

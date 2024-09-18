@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <script type="module" src="./assets/script.js" rel="script" defer></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <title>Form Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="w-75 ms-2">
+            <img id="logo" src="./assets/img/icons/logo.jpg" alt="logo">
+            <span>antincendio sondrio<small><sup>&copy;</sup></small></span>
+        </div>
+    </header>
+    <main>
+        <div>
+            <select name="shifts" id="shifts_select" class="p-1 rounded-2">
+                <option selected disabled>Seleziona un mese</option>
+                <option value="september_2024">Settembre</option>
+            </select>
+        </div>
+        <div id="month_image" class="container"></div>
+
+        <form id="shiftForm">
+            <label for="day">Giorno:</label>
+            <input type="number" id="day" name="day" min="1" max="31" required>
+            <label for="dayShift1">Turno Diurno 1:</label>
+            <input type="text" id="dayShift1" name="dayShift1" required>
+            <label for="dayShift2">Turno Diurno 2:</label>
+            <input type="text" id="dayShift2" name="dayShift2" required>
+            <label for="nightShift1">Turno Notturno 1:</label>
+            <input type="text" id="nightShift1" name="nightShift1" required>
+            <label for="nightShift2">Turno Notturno 2:</label>
+            <input type="text" id="nightShift2" name="nightShift2" required>
+            <button type="submit">Aggiungi Turno</button>
+        </form>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row mainrow">
+                <h1 class="sitnavH1 hidden-md hidden-lg">
+                    Site Navigation
+                </h1>
+                <div class="col-md-3">
+
+
+
+
+                    <ul>
+                        <li>
+                            <a href="./about.html">About page</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <ul>
+                        <li>
+                            <a href="">Developer contacts</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+
+                    <ul>
+                        <li>
+                            <a href="#">Abilitation courses</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="hidden-md hidden-lg">
+
+                <div class="col-md-3">
+                    <h1 class="contactus">Contact Me</h1>
+                    <p>Email: <a href="mailto:simone.moretti.944@gmil.com">simone moretti</a></p>
+                    <!-- <p>Call-Us <a href="tel:044-4547896321">044-4547896321</a></p> -->
+                    <h1 class="socialM">Social Media</h1>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-3x"></i></a>
+                    <a href="https://www.facebook.com"><i class="fab fa-instagram-square fa-3x"></i></a>
+                    <a href="https://www.facebook.com"><i class="fab fa-twitter-square fa-3x"></i></a>
+                    <a href="https://www.facebook.com"><i class="fab fa-pinterest-square fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
